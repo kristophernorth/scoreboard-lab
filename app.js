@@ -1,7 +1,3 @@
-console.log('ready')
-
-console.log("Button Clicked!")
-
 let home = 0
 let away = 0
 
@@ -12,14 +8,17 @@ function increaseHomeScoreByOne() {
 
 function increaseHomeScoreByThree() {
   home += 3
+  drawHomeScore()
 }
 
 function increaseAwayScoreByThree() {
   away++
+  drawAwayScore()
 }
 
 function increaseAwayScoreByThree() {
   away += 3
+  drawAwayScore()
 }
 
 function increaseHomeScore(points) {
