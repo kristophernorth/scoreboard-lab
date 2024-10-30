@@ -24,7 +24,8 @@
         Scoreboard lab awesomeness
       </div>
       <div class="col-2 text-end">
-        <button class="btn btn-danger">RESET</button>
+        <!-- NOTE - added ID for reset button -->
+        <button onclick="resetScores()" class="btn btn-danger">RESET</button>
       </div>
     </nav>
   </header>
@@ -34,23 +35,27 @@
       <div class="row d-flex text-center">
         <div class="col-md-6 col-12">
           <p>HOME</p>
+          <!-- NOTE - this is where I added the homescore ID -->
           <p id="homeScore">0</p>
           <div class="row">
             <div class="col">
-              <button class="btn btn-primary">Score +1</button>
-              <button class="btn btn-primary">Score +3</button>
-              <button class="btn btn-primary">Score -1</button>
+              <!-- NOTE - this is where I added the function   -->
+              <button onclick="increaseHomeScoreByOne()" class="btn btn-primary">Score +1</button>
+              <button onclick="increaseHomeScoreByThree()" class="btn btn-primary">Score +3</button>
+              <button onclick="decreaseHomeScoreByOne()" class="btn btn-primary">Score -1</button>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-12">
           <p>AWAY</p>
+          <!-- NOTE - Added awayScore button -->
           <p id="awayScore">0</p>
           <div class="row">
             <div class="col">
-              <button class="btn btn-primary">Score +1</button>
-              <button class="btn btn-primary">Score +3</button>
-              <button class="btn btn-primary">Score -3</button>
+              <!-- NOTE - this is where I added the function   -->
+              <button onclick="increaseAwayScoreByOne()" class="btn btn-primary">Score +1</button>
+              <button onclick="increaseAwayScoreByThree()" class="btn btn-primary">Score +3</button>
+              <button onclick="decreaseAwayScoreByOne()" class="btn btn-primary">Score -1</button>
             </div>
           </div>
         </div>
